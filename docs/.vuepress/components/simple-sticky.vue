@@ -1,12 +1,12 @@
 <template>
    <div >
-    <sakura-card>
+    <simple-card>
       <s-sticky :offset-top="top">
         <div class="box">滚动下看我是不是被黏住了~</div>
       </s-sticky>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   </div>
 </template>
 <script>

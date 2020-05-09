@@ -1,6 +1,6 @@
 <template>
   <div >
-    <sakura-card>
+    <simple-card>
       <p>当前出现第 <span class="highlight">{{selected}} </span>张</p>
       <s-slide v-model="selected" class="slide-wrapper">
         <s-slide-item name="1">
@@ -21,7 +21,7 @@
       </s-slide>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   </div>
 </template>
 <script>

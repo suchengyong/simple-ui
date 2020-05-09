@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>基础用法</h3>
-     <sakura-card>
+     <simple-card>
        <s-tab v-model="selected">
         <s-tab-head>
           <s-tab-item name="x" disabled>源氏</s-tab-item>
@@ -37,10 +37,10 @@
       </s-tab>
 
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
-     </sakura-card>
+     </simple-card>
 
     <h3>垂直标签</h3>
-    <sakura-card>
+    <simple-card>
     <p>当前选中的标签是： <span class="highlight">{{selected1}}</span></p>
       <s-tab tab-position="left" v-model="selected1">
         <s-tab-head>
@@ -67,7 +67,7 @@
         </s-tab-body>
       </s-tab>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-     </sakura-card>
+     </simple-card>
     
   </div>
 </template>

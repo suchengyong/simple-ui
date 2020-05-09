@@ -1,7 +1,7 @@
 <template>
   <div >
     <h3>基础用法</h3>
-    <sakura-card>
+    <simple-card>
       <s-steps :active="active1">
         <s-step title="步骤 1"  ></s-step>
         <s-step title="步骤 2" ></s-step>
@@ -10,10 +10,10 @@
       <button @click="set1">click</button>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>自定义完成样式提示颜色</h3>
-    <sakura-card>
+    <simple-card>
        <s-steps :active="active2" step-finish-color="#409eff">
         <s-step title="步骤 1"  ></s-step>
         <s-step title="步骤 2"  ></s-step>
@@ -22,10 +22,10 @@
       <button @click="set2">click</button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>带图标的步骤条</h3>
-    <sakura-card>
+    <simple-card>
        <s-steps :active="active3" space="200" >
         <s-step title="步骤 1" description="1992年我出生" icon="shamrock"></s-step>
         <s-step title="步骤 2" description="1999年我上学前班" icon="shamrock"></s-step>
@@ -34,10 +34,10 @@
       <button @click="set3">click</button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code3}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>垂直步骤条</h3>
-    <sakura-card>
+    <simple-card>
        <s-steps :active="active4"  direction="vertical" style="height:300px">
         <s-step title="步骤 1"  ></s-step>
         <s-step title="步骤 2"  ></s-step>
@@ -46,7 +46,7 @@
       <button @click="set4">click</button>
       
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code4}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
   </div>
 </template>

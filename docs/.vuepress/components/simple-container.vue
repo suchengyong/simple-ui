@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>样式1</h3>
-    <sakura-card>
+    <simple-card>
         <div style="width:600px">
           <s-layout height="400">
             <s-header height="100">header</s-header>
@@ -13,10 +13,10 @@
         </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>样式2</h3>
-    <sakura-card>
+    <simple-card>
       <div style="width:600px">
         <s-layout height="400">
           <s-header height="100">header</s-header>
@@ -29,10 +29,10 @@
       </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>样式3</h3>
-    <sakura-card>
+    <simple-card>
       <div style="width:600px">
         <s-layout height="400">
           <s-header height="100">header</s-header>
@@ -45,10 +45,10 @@
       </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code3}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>样式4</h3>
-    <sakura-card>
+    <simple-card>
       <div style="width:600px">
         <s-layout height="400">
           <s-sider width="200">sidebar</s-sider>
@@ -61,7 +61,7 @@
       </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code4}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
 </div>
 </template>

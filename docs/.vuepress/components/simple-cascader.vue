@@ -1,13 +1,13 @@
 <template>
   <div>
-     <sakura-card>
+     <simple-card>
        <s-cascader
           :options="options"
           :selected.sync="selected"
         >
        </s-cascader>
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-     </sakura-card>
+     </simple-card>
 
   </div>
 </template>

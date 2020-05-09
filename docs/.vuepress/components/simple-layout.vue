@@ -2,7 +2,7 @@
   <div>
 
     <h3>基础用法</h3>
-    <sakura-card>
+    <simple-card>
       <s-row class="row-bg">
         <s-col span="4">
           <div class="demo-col" style="backgroundColor:#d4b1b5"></div>
@@ -25,10 +25,10 @@
      </s-row>
 
      <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>分栏偏移</h3>
-    <sakura-card>
+    <simple-card>
        <s-row class="row-bg">
         <s-col span="6">
           <div class="demo-col"  style="backgroundColor:#d4b1b5"></div>
@@ -42,10 +42,10 @@
       </s-row>
 
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>分栏间隔</h3>
-    <sakura-card>
+    <simple-card>
        <s-row class="row-bg" gutter="20">
         <s-col span="6">
           <div class="demo-col" style="backgroundColor:#d4b1b5"></div>
@@ -62,11 +62,11 @@
       </s-row>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code3}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
 
     <h3>响应式布局</h3>
-    <sakura-card>
+    <simple-card>
       <s-row class="row-bg" align="left">
         <s-col span="8" :xl="{span:1}" :md="{span:10}" >
           <div class="demo-col" style="backgroundColor:#d4b1b5"></div>
@@ -80,7 +80,7 @@
       </s-row>
 
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code4}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
   </div>
 </template>

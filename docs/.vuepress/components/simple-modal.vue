@@ -1,10 +1,10 @@
 <template>
   <div>
-    <sakura-card>
+    <simple-card>
        <s-button @click="clickHandler" icon="gift-fill">点我</s-button>
       <s-button @click="clickHandler2" icon="discovery" style="margin-left:30px;background:#91AD70" >点我</s-button>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   </div>
 </template>
 <script>

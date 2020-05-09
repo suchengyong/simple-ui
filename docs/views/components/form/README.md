@@ -59,3 +59,20 @@ sidebarDepth: 2
 | value / v-model| 选中项绑定值 | array |- | - |
 | options|可选项数据源，键名可通过 props 属性配置 | array| - | - |
 </ClientOnly>
+
+## Radio 单选框
+<ClientOnly>
+  <simple-radio />
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| vertical | 垂直排列的 radio | Boolean | -- | false |
+| options | radio 的选项数组| Array | -- | -- |
+| default-index	| 默认选中选项的 index 值	| Number |	--	| -- |
+
+
+<font size=5>Events</font>
+| 事件名称| 说明 | 回调参数 | 
+| :------ | ------ | ------ |
+| on-change | 选中项改变时触发 | 选中项的 value 值 |
+</ClientOnly>

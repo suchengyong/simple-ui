@@ -1,11 +1,11 @@
 <template>
   <div>
-    <sakura-card>
+    <simple-card>
       <s-button @click="showToast" type="info">点我</s-button>
       <s-button @click="showToast3"  icon="star">点我</s-button>
       <s-button @click="showToast2" type="primary" icon="heart">点我</s-button>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   </div>
 </template>
 <script>

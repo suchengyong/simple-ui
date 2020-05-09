@@ -54,6 +54,9 @@ export default {
     },
     onItemUpdateSelected (newSelected) {
       this.$emit('update:selected', newSelected)
+      if (!newSelected[newSelected.length - 1].children) {
+        this.popoverVisible = false
+      }
     },
     toggle () {
       this.popoverVisible = !this.popoverVisible
@@ -83,6 +86,8 @@ export default {
     display: inline-flex;
     flex-direction: row;
     position: absolute;
-    z-index: 100
+    z-index: 100;
+    left: 0px;
+    top: 25px;
   }
 </style>

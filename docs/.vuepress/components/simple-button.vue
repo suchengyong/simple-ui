@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>基础用法</h3>
-    <sakura-card>
+    <simple-card>
       <s-button>default</s-button>
       <s-button type="primary">primary</s-button>
       <s-button type="info">info</s-button>
@@ -12,31 +12,31 @@
       <template v-slot:code>
         <pre v-highlightjs><code class="vue">{{code1}}</code></pre>
       </template>    
-    </sakura-card>
+    </simple-card>
 
      <h3>禁用状态</h3>
-    <sakura-card>
+    <simple-card>
       <s-button disabled type="primary">disabled</s-button>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code2}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>图标按钮</h3>
-    <sakura-card>
+    <simple-card>
       <s-button  icon="home"  type="primary">home</s-button>
       <s-button  icon="phone-fill" type="primary" icon-position="right">call</s-button>
       <s-button  icon="visible"  type="primary">show password</s-button>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code3}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>加载中</h3>
-    <sakura-card>
+    <simple-card>
       <s-button  loading icon="download"  type="primary">加载中</s-button>
 
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code4}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
     <h3>按钮组</h3>
-    <sakura-card>
+    <simple-card>
       <s-button-group>
           <s-button icon="left" icon-position="left">prev</s-button>
           <s-button>middle</s-button>
@@ -44,7 +44,7 @@
       </s-button-group>
 
        <template v-slot:code><pre v-highlightjs><code class="vue">{{code5}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
   </div>
 </template>

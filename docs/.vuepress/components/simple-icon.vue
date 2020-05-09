@@ -1,6 +1,6 @@
 <template>
   <div>
-    <sakura-card>
+    <simple-card>
       <div class="ico-list">
         <div v-for="(item, index) in list" class="ico-wrapper">
           <s-icon :name="item" class="ico" :color="selectList.includes(item) ?'#E6A4A5':''"></s-icon>
@@ -8,7 +8,7 @@
         </div>
       </div>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   </div>
 </template>
 <script>

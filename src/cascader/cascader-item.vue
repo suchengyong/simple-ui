@@ -60,7 +60,6 @@ export default {
       selectedCopy[this.level] = item
       selectedCopy.splice(this.level + 1)
       this.$emit('update:selected', selectedCopy)
-      console.log()
     },
     // 递归的组件也要监听内部的$emit事件，此法同cascader.vue里面的事件传播一样
     onRecursiveUpdateSelected (newSelected) {

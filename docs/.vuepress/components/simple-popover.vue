@@ -1,6 +1,6 @@
 <template>
   <div style="margin-top:40px">
-    <sakura-card>
+    <simple-card>
       <s-popover
         style="margin-right:60px;"
         placement="top"
@@ -39,7 +39,7 @@
     </s-popover>
 
      <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
   
   </div>
 </template>

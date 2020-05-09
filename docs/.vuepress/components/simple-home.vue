@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name:'sakura-home'
+  name:'simple-home'
 }
 </script>
 <style lang="scss" scoped>

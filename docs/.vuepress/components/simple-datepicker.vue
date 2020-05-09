@@ -1,11 +1,11 @@
 <template>
   <div>
     <h3>基础用法</h3>
-    <sakura-card>
+    <simple-card>
        <s-datepicker v-model="selectedDate"></s-datepicker>
     
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
   </div>
 </template>

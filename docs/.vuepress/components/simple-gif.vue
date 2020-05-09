@@ -5,7 +5,7 @@
 </template>
 <script>
 export default {
-  name:'sakura-gif'
+  name:'simple-gif'
 }
 </script>
 <style lang="scss" scoped>

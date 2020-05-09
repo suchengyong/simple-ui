@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name:'sakura-color',
+  name:'simple-color',
   props:{
     list:{
       type: Array

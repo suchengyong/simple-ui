@@ -1,6 +1,6 @@
 <template>
   <div>
-     <sakura-card>
+     <simple-card>
        <div class="form-wrapper">
         <s-form  :model.sync="user" class="form"  :rules="rules" ref="form">
           <span>请随意填写下方表单并提交，本例子含多种校验规则，详细可以展开代码查看~</span>
@@ -22,7 +22,7 @@
       </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
 
   </div>
 </template>

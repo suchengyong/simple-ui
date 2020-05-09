@@ -1,6 +1,6 @@
 <template>
   <div>
-    <sakura-card>
+    <simple-card>
       <s-input value="正常的" @change="changeHandler"  class="input" icon="star"></s-input>
       <s-input value="只读" readonly id="readonly" class="input"></s-input>
       <s-input value="不可输入" disabled class="input" icon="false"></s-input>
@@ -11,7 +11,7 @@
       </div>
 
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
-    </sakura-card>
+    </simple-card>
     
   </div>
 </template>
