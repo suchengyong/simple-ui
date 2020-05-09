@@ -4,7 +4,7 @@ module.exports = {
     title: 'Simple UI',
     description: '一个极简风格UI组件库',
     head: [
-      ['link', { rel: 'icon', href: '/favicon.ico' }]
+      ['link', { rel: 'icon', href: '/logo.png' }]
     ],
     themeConfig: {
       nav: [
