@@ -1,2 +1,30 @@
 # simple-ui
-一套基于 Vue 2.0 的平时自己工作中总结提取的 UI 组件库。
+[![Build Status](https://www.travis-ci.org/Firenzia/sakura-ui.svg?branch=master)](https://www.travis-ci.org/Firenzia/sakura-ui)
+
+## 使用方式
+1. Install package [suchengyong-simple-ui]
+   ```sh
+   npm i -D suchengyong-simple-ui
+   ```
+2. Get Started
+   ```vue
+    <template>
+        <div id="app">
+            <s-button type="primary">点击报名</s-button>
+        </div>
+    </template>
+
+    <script>
+    import {Button} from 'suchengyong-simple-ui'
+    import 'suchengyong-simple-ui/dist/sakura.css'
+    export default {
+        name: 'app',
+        components: {
+            's-button':Button
+        }
+    }
+    </script>
+
+   ```
+    
+
