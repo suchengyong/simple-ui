@@ -1,5 +1,5 @@
 # simple-ui
-[![Build Status](https://www.travis-ci.org/Firenzia/sakura-ui.svg?branch=master)](https://www.travis-ci.org/Firenzia/sakura-ui)
+## [!官方文档(https://simple-ui.netlify.app/)]
 
 ## 使用方式
 1. Install package [suchengyong-simple-ui]
