@@ -6,6 +6,14 @@ title: '安装'
 ```
 npm i -D suchengyong-simple-ui
 ```
-<ClientOnly>
-  <simple-gif/>
-</ClientOnly>
+#### 浏览器支持 / 兼容
+由于使用了很多新特性，目前组件库主要支持现代浏览器，并且某些组件在移动端 / 微信浏览器的表现不甚理想。
+
+#### 本地引用
+到官方仓库下载或使用命令行克隆到本地
+
+https://github.com/suchengyong/simple-ui.git
+下载 / 克隆到本地后，你就可以注册某个组件然后使用了。
+
+#### NPM 安装
+推荐使用npm / yarn来安装，享受生态圈和工具带来的便利。

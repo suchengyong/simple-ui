@@ -24,6 +24,6 @@ export default {
 </script>
 
 ```
-<ClientOnly>
+<!-- <ClientOnly>
   <simple-img/>
-</ClientOnly>
+</ClientOnly> -->

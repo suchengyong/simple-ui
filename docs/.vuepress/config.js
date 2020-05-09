@@ -9,7 +9,7 @@ module.exports = {
     themeConfig: {
       nav: [
         { text: '首页', link: '/' },
-        { text: 'Github', link: 'https://github.com/suchengyong/' },
+        { text: 'Github', link: 'https://github.com/suchengyong/simple-ui/' },
       ],
       sidebar: [
           {

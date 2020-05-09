@@ -1,0 +1,109 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  10.16.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/nanoassert/download/nanoassert-1.1.0.tgz: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (/usr/local/lib/node_modules/yarn/lib/cli.js:696:66)
+      at new ResponseError (/usr/local/lib/node_modules/yarn/lib/cli.js:802:124)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:67057:16)
+      at Request.emit (events.js:198:13)
+      at Request.module.exports.Request.onRequestResponse (/usr/local/lib/node_modules/yarn/lib/cli.js:141625:10)
+      at ClientRequest.emit (events.js:203:15)
+      at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:556:21)
+      at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+      at TLSSocket.socketOnData (_http_client.js:442:20)
+      at TLSSocket.emit (events.js:198:13)
+
+npm manifest: 
+  {
+    "name": "suchengyong-simple-ui",
+    "version": "1.0.0",
+    "private": false,
+    "main": "dist/simple.umd.min.js",
+    "description": "an UI framework based on Vue.js",
+    "types": "./types/index.d.ts",
+    "scripts": {
+      "serve": "vue-cli-service serve",
+      "build": "vue-cli-service build --target lib --name simple src/index.js",
+      "test:unit": "vue-cli-service test:unit",
+      "docs:dev": "vuepress dev docs",
+      "docs:build": "vuepress build docs"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/suchengyong/simple-ui.git"
+    },
+    "keywords": [
+      "UI",
+      "vue"
+    ],
+    "author": "Firenzia",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/suchengyong/simple-ui.git/issues"
+    },
+    "homepage": "https://github.com/suchengyong/simple-ui.git#readme",
+    "dependencies": {
+      "vue": "^2.6.10",
+      "vue-highlightjs": "^1.3.3"
+    },
+    "devDependencies": {
+      "@vue/cli-plugin-babel": "^3.6.0",
+      "@vue/cli-plugin-eslint": "^3.6.0",
+      "@vue/cli-plugin-unit-mocha": "^3.6.0",
+      "@vue/cli-service": "^3.6.0",
+      "@vue/eslint-config-standard": "^4.0.0",
+      "@vue/test-utils": "1.0.0-beta.29",
+      "babel-eslint": "^10.0.1",
+      "chai": "^4.1.2",
+      "eslint": "^5.16.0",
+      "eslint-plugin-standard": "^4.0.0",
+      "eslint-plugin-vue": "^5.0.0",
+      "node-sass": "^4.9.0",
+      "sass-loader": "^7.1.0",
+      "vue-template-compiler": "^2.5.21",
+      "vuepress": "^0.13.1"
+    },
+    "eslintConfig": {
+      "root": true,
+      "env": {
+        "node": true
+      },
+      "extends": [
+        "plugin:vue/essential",
+        "@vue/standard"
+      ],
+      "rules": {},
+      "parserOptions": {
+        "parser": "babel-eslint"
+      }
+    },
+    "postcss": {
+      "plugins": {
+        "autoprefixer": {}
+      }
+    },
+    "browserslist": [
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
+    ]
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
