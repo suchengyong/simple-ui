@@ -1,6 +1,6 @@
 # simple-ui
 
-[官方文档](https://simple-ui.netlify.ap)   
+[官方文档](https://simple-ui.netlify.app)   
 
 ## 使用方式
 1. Install package [suchengyong-simple-ui]
