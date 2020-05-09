@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-    base:'/simple-ui/',
+    base:'/',
     title: 'Simple UI',
     description: '一个极简风格UI组件库',
     head: [
