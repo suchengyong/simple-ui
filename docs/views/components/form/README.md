@@ -50,6 +50,16 @@ sidebarDepth: 2
 </ClientOnly>
 
 
+## timepicker 时间选择器
+<ClientOnly>
+  <simple-timepicker/>
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| default-value| 默认选中时间，必须为"00:00:00"格式的字符串 | String |- | - |
+
+</ClientOnly>
+
 ## Cascader 级联选择器
 <ClientOnly>
   <simple-cascader/>
@@ -75,4 +85,22 @@ sidebarDepth: 2
 | 事件名称| 说明 | 回调参数 | 
 | :------ | ------ | ------ |
 | on-change | 选中项改变时触发 | 选中项的 value 值 |
+</ClientOnly>
+
+
+## Switch 开关
+<ClientOnly>
+  <simple-switch />
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| s-width | switch 开关的宽度 | String | -- | 40px |
+| disabled | 禁用状态| Boolean | -- | false |
+| false-color / true-color	| switch 开关不同状态对应的背景颜色	| String |	--	| -- |
+| false-text / true-text	| switch 开关不同状态对应的提示文字	| String |	--	| -- |
+
+<font size=5>Events</font>
+| 事件名称| 说明 | 回调参数 | 
+| :------ | ------ | ------ |
+| on-change | value 改变时触发 | 改变后的 value 值 |
 </ClientOnly>

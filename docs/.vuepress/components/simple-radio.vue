@@ -1,5 +1,7 @@
 <template>
   <div>
+    <p>适用于在多个互斥的选项中选择的场景</p>
+    <h3>基础用法</h3>
     <simple-card>
       <s-radio :default-index="index" :options="options" @on-change="radioOnChange($event)"></s-radio>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>

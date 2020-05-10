@@ -88,12 +88,13 @@ export default {
 
       overflow: auto;
       max-height: 300px;
-       background: #fff;
+      background: #fff;
       flex-shrink: 0;
       > div{
         padding:.5em;
         &.active-item{
-          background: lightblue;
+          background: #52c41a;
+          color: #fff;
         }
       }
     }

@@ -69,8 +69,8 @@
         </div>
 
         <div class="action" v-show="model==='day'">
-          <s-button @click="setTodaySelected">today</s-button>
-           <s-button style="margin-left:16px" @click="clear">clear</s-button>
+          <s-button @click="setTodaySelected">今天</s-button>
+           <s-button style="margin-left:16px" @click="clear">清除</s-button>
         </div>
       </div>
 

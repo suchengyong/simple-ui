@@ -88,6 +88,6 @@ export default {
     position: absolute;
     z-index: 100;
     left: 0px;
-    top: 25px;
+    top: 50px;
   }
 </style>

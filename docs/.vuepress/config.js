@@ -7,10 +7,12 @@ module.exports = {
       ['link', { rel: 'icon', href: '/logo.png' }]
     ],
     themeConfig: {
+      logo:'/logo.png',
       nav: [
         { text: '首页', link: '/' },
         { text: 'Github', link: 'https://github.com/suchengyong/simple-ui/' },
       ],
+      smoothScroll: true,
       sidebar: [
           {
               title: '指南',
@@ -38,8 +40,8 @@ module.exports = {
                 'views/components/other/'
               ]
             },
-        ]
-      },
+      ]
+    },
     scss:{ //配置 scss 根目录
       includePaths: [path.join(__dirname, '../../style')]
     }
