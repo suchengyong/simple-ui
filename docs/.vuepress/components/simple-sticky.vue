@@ -31,7 +31,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .box{
-    width:400px;
+    width:600px;
     height: 50px;
     background:#F4A7B9;
     display: flex;

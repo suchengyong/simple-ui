@@ -2,7 +2,7 @@
   <div>
     <h3>基础用法</h3>
      <simple-card>
-        <s-collapse v-model="selected1" style="width:600px">
+        <s-collapse v-model="selected1" style="width:850px">
           <s-collapse-item title="香蕉 Banana" name="1">
             <div>香蕉是淀粉质丰富的有益水果。</div>
           </s-collapse-item>
@@ -25,7 +25,7 @@
 
     <h3 style="margin-top:60px">手风琴效果</h3>
      <simple-card>
-      <s-collapse v-model="selected2" accordion style="width:600px;">
+      <s-collapse v-model="selected2" accordion style="width:850px;">
         <s-collapse-item title="丰城秀吉" name="1">
           <div>（1537年3月17日-1598年9月18日）日本战国时代、安土桃山时代大名、天下人，著名政治家，继室町幕府之后，首次以“天下人”的称号统一日本的战国三杰之一。本是足轻（下级步兵），后因侍奉织田信长而崛起。</div>
         </s-collapse-item>
