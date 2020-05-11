@@ -1,3 +1,4 @@
+/* eslint-disable */
 import TWEEN from '@tweenjs/tween.js'
 
 function animate(time) {

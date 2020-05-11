@@ -6,6 +6,7 @@
     </transition>
 </template>
 <script>
+/* eslint-disable */
 export default {
     name: 's-spread',
     props: {

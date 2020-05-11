@@ -1,16 +1,29 @@
 <template>
-  <div style="margin:60px">
-    <s-waterfall width='120' :source= 'source' @scroll-bottom='scrollBottom'>
+  <div>
+    <p>输入或选择时间的组件。使用v-model绑定。</p>
+    <h3>基础用法</h3>
+    <simple-card>
+     <s-waterfall width='120' :source= 'source' @scroll-bottom='scrollBottom'>
       <div slot-scope="slotProps" class="backg">
         <div>插槽:{{slotProps.prop.title}}</div>
         <div>宽度 {{ slotProps.prop.size }}</div>
       </div>
     </s-waterfall>
+    <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
+   </simple-card>
   </div>
 </template>
 <script>
-/* eslint-disable */
+import Waterfall from "../../../src/waterfall/waterfall";
+import Vue from 'vue'
+import VueHighlightJS from 'vue-highlightjs'
+Vue.use(VueHighlightJS)
+
 export default {
+  name:'simple-waterfall',
+  components:{
+      's-waterfall':Waterfall
+  },
   data () {
     return {
      source:[{
@@ -55,23 +68,30 @@ export default {
      },{
        title:'文字',
        size:420,
-     }]
+     }],
+      code:`
+       <x-waterfall 
+        :width="150" 
+        :source="source" 
+        @scroll-bottom="scrollBottom">
+        <div slot-scope="slotProps">
+            <div>slot</div>
+            <div>宽度 {{ slotProps.prop.size }}</div>
+        </div>
+        </x-waterfall>
+     `.replace(/^ {8}/gm, "").trim(),
     }
   },
-  computed: {
-  },
-  mounted () {
-  },
   methods: {
-    scrollBottom () {
-
+    scrollBottom (e) {
+      console.log(e)
     }
   }
 }
 </script>
-<style lang="scss">
-.backg{
-  background: red;
+<style lang="scss" scoped>
+ .backg{
+  background: #80d2db;
   color: #fff;
   font-size: 20px;
   margin-top: 20px;

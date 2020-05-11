@@ -2,7 +2,7 @@
   <div>
     <h3>样式1</h3>
     <simple-card>
-        <div style="width:600px">
+        <div style="width:850px">
           <s-layout height="400">
             <s-header height="100">header</s-header>
             <s-layout>
@@ -11,13 +11,12 @@
             <s-footer>footer</s-footer>
           </s-layout>
         </div>
-
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code1}}</code></pre></template>
     </simple-card>
 
     <h3>样式2</h3>
     <simple-card>
-      <div style="width:600px">
+      <div style="width:850px">
         <s-layout height="400">
           <s-header height="100">header</s-header>
           <s-layout>
@@ -33,7 +32,7 @@
 
     <h3>样式3</h3>
     <simple-card>
-      <div style="width:600px">
+      <div style="width:850px">
         <s-layout height="400">
           <s-header height="100">header</s-header>
           <s-layout>
@@ -49,7 +48,7 @@
 
     <h3>样式4</h3>
     <simple-card>
-      <div style="width:600px">
+      <div style="width:850px">
         <s-layout height="400">
           <s-sider width="200">sidebar</s-sider>
           <s-layout>

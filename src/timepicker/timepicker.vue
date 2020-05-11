@@ -34,6 +34,7 @@
     </div>
 </template>
 <script>
+/* eslint-disable */
 import xIcon from '../icon/icon.vue'
 import xSpread from './spread.vue'
 import tweenScroll from './tweenScroll.js'

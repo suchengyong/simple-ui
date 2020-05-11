@@ -54,7 +54,6 @@ sidebarDepth: 2
 ## Container 容器
 <ClientOnly>
   <simple-container/>
-
 <font size=5>Header Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
@@ -69,4 +68,31 @@ sidebarDepth: 2
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
 | height | footer高度，单位px | Number/String |- | 60 |
+</ClientOnly>
+
+## Waterfall 瀑布流
+<ClientOnly>
+  <simple-waterfall/>
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 60%;
+}
+table th:nth-of-type(3) {
+    width: 20%;
+}
+</style>
+<font size=5>Header Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| width | 瀑布流布局中每个子元素的宽度，单位为 px | Number | -- | 200 |
+| source |  组件 v-for 列表渲染的数据，必填，渲染时数据将以作用域插槽的形式传回父组件 | Array | -- | -- |
+| target |  组件监听滚动的目标，可以是 CSS 选择器，也可以是 HTML 元素，如果不传，组件将默认监听 window | String , HTMLElement | -- | -- |
+
+<font size=5>Events</font>
+| 事件名称| 说明 | 回调参数 | 
+| :------: | :------: | :------: |
+| scroll-bottom | 被监听的元素滚动到底部时触发，只触发一次，当 source 数据改变时，会重新添加监听（滚动到底部时会再次触发） |  -- |
 </ClientOnly>
