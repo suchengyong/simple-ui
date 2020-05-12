@@ -4,7 +4,7 @@
             <div class="circle" :style="{width:`${width}px`,height:`${width}px`}">
                 <span-icon name="loading" class="icon"></span-icon>
             </div>
-            <span class="tips" v-if="tips" :style="{color:tipsColor}">{{tips}}</span>
+            <span class="tips" v-if="tips" :style="{'color':tipsColor,'font-size':tipsSize}">{{tips}}</span>
         </div>
     </transition>
 </template>
@@ -18,6 +18,7 @@
             tips: { type: String, default: '加载中...' },
             width: { type: Number, default: 80 },
             tipsColor: { type: String, default: '#36b1bf' },
+            tipsSize:{ type: String, default: '#666666' },
             spinning: { type: Boolean, default: false }
         },
         data() {

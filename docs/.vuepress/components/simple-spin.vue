@@ -3,7 +3,7 @@
     <p>用于提供水平和垂直方向展开收起动画功能的小组件。</p>
     <h3>基础用法</h3>
     <simple-card>
-      <s-spin :spinning="spinning" tips="加载中..." :width="50" :tips-color="tipsColor"></s-spin>
+      <s-spin :tips-size="tipsSize" :spinning="spinning" tips="加载中..." :width="40" :tips-color="tipsColor"></s-spin>
       <div><s-button type="primary" @click="startSpread">取消/加载</s-button></div>
       <template v-slot:code><pre v-highlightjs><code class="vue">{{code}}</code></pre></template>
     </simple-card>
@@ -25,7 +25,8 @@ export default {
     data(){
         return {
             spinning:true,
-            tipsColor:'#333',
+            tipsColor:'#3eaf7c',
+            tipsSize:'12px',
             code: `
             <s-spin :spinning="spinning" tips="加载中..." :width="100"></s-spin>
             `.replace(/^ {8}/gm, '').trim(),

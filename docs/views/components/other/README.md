@@ -68,6 +68,7 @@ sidebarDepth: 2
 | spinning | 是否显示加载效果，默认不显示 | Boolean |-- | false |
 | delay | 延迟显示加载效果出现的时间，单位为 ms，在加载效果出现前修改 spinning 为 false，则不出现加载效果（防止闪烁）| Number |-- | -- |
 | width | 加载动画的直径大小，单位为 px | Number |-- | 80|
-| tips | 加载状态的提示文字，将出现在加载动画的正下方 | String |-- | -- |
-| tips-color | 加载状态的提示文字颜色 ｜ String | -- | #36b1bf |
+| tips | 加载状态的提示文字，将出现在加载动画的正下方 | String | -- | -- |
+| tips-color | 加载状态的提示文字颜色 | String | -- | #36b1bf |
+| tips-size | 加载状态的提示文字大小 | String | -- | 14px |
 </ClientOnly>
