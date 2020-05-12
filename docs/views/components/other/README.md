@@ -45,4 +45,29 @@ sidebarDepth: 2
 | name|唯一标志符 | string |- | -|
 </ClientOnly>
 
+## Spread 动画
+<ClientOnly>
+  <simple-spread/>
 
+<font size=5>Spread Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| visible| 控制内容的展开和收起，可动态绑定，必填。组件内部使用 v-show 控制内容的显示 |Boolean|-- | -- |
+| horizontal | 横向展开和收起，默认为纵向 |boolean|-- | false |
+| duration |动画持续时间，单位为 ms|String,number|--|300ms|
+
+</ClientOnly>
+
+## Spin 加载中
+<ClientOnly>
+  <simple-spin/>
+
+<font size=5>Spin Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| spinning | 是否显示加载效果，默认不显示 | Boolean |-- | false |
+| delay | 延迟显示加载效果出现的时间，单位为 ms，在加载效果出现前修改 spinning 为 false，则不出现加载效果（防止闪烁）| Number |-- | -- |
+| width | 加载动画的直径大小，单位为 px | Number |-- | 80|
+| tips | 加载状态的提示文字，将出现在加载动画的正下方 | String |-- | -- |
+| tips-color | 加载状态的提示文字颜色 ｜ String | -- | #36b1bf |
+</ClientOnly>

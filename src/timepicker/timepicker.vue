@@ -35,14 +35,14 @@
 </template>
 <script>
 /* eslint-disable */
-import xIcon from '../icon/icon.vue'
-import xSpread from './spread.vue'
+import Icon from '../icon/icon.vue'
+import Spread from './spread.vue'
 import tweenScroll from './tweenScroll.js'
 export default {
   name: 's-timepicker',
   components: { 
-    's-icon': xIcon, 
-    's-spread': xSpread 
+    's-icon': Icon, 
+    's-spread': Spread 
   },
   props: {
     defaultValue: {

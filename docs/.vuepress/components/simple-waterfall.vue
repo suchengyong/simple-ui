@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p>输入或选择时间的组件。使用v-model绑定。</p>
+    <p>瀑布流组件，快速实现瀑布流布局。</p>
+    <p>通过作用域插槽，瀑布流组件可将数据传回父组件，父组件使用slot-scope可以在插槽中获取到传回的数据。</p>
     <h3>基础用法</h3>
     <simple-card>
      <s-waterfall width='120' :source= 'source' @scroll-bottom='scrollBottom'>

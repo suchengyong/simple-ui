@@ -4,10 +4,10 @@
     </div>
 </template>
 <script>
-import sOption from './option.vue'
+import Option from './option.vue'
 export default {
-  name: 'sRadio',
-  components: { sOption },
+  name: 's-radio',
+  components: { 's-option':Option },
   props: {
     options: { type: Array, required: true },
     vertical: { type: Boolean, default: false },

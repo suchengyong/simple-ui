@@ -1,11 +1,8 @@
 <template>
   <div style="margin:60px">
-    <s-waterfall width='120' :source= 'source' @scroll-bottom='scrollBottom'>
-      <div slot-scope="slotProps" class="backg">
-        <div>插槽:{{slotProps.prop.title}}</div>
-        <div>宽度 {{ slotProps.prop.size }}</div>
-      </div>
-    </s-waterfall>
+    <s-button @click="start">开始</s-button>
+    <s-button @click="finish">完成</s-button>
+    <s-button @click="error">错误</s-button>
   </div>
 </template>
 <script>
@@ -13,49 +10,6 @@
 export default {
   data () {
     return {
-     source:[{
-       title:'文后回复发文后回复发挥好发挥废话话费废话话费哈字挥好发挥废话话费废话话费哈字',
-       size:120,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字',
-       size:220,
-     },{
-       title:'文字',
-       size:140,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字',
-       size:160,
-     },{
-       title:'文字',
-       size:180,
-     },{
-       title:'文字',
-       size:320,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字',
-       size:420,
-     },{
-       title:'文字',
-       size:150,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字',
-       size:120,
-     },{
-       title:'文字',
-       size:160,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字文后回复发挥好发挥废话话费废话话费哈字',
-       size:120,
-     },{
-       title:'文字',
-       size:320,
-     },{
-       title:'文后回复发挥好发挥废话话费废话话费哈字文后回复发挥好发挥废话话费废话话费哈字',
-       size:120,
-     },{
-       title:'文字',
-       size:420,
-     }]
     }
   },
   computed: {
@@ -63,8 +17,14 @@ export default {
   mounted () {
   },
   methods: {
-    scrollBottom () {
-
+    start() {
+      this.$progress.start();
+    },
+    finish() {
+      this.$progress.finish();
+    },
+    error() {
+      this.$progress.error();
     }
   }
 }

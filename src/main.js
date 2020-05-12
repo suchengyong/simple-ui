@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Demo from './demo.vue'
 import VueHighlightJS from 'vue-highlightjs'
-
+import progress from './progress/index'
+Vue.use(progress)
 // Tell Vue.js to use vue-highlightjs
 Vue.use(VueHighlightJS)
 

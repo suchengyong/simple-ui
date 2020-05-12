@@ -3,9 +3,9 @@ title: 'Notice 通知'
 sidebarDepth: 2
 ---
 
-## Toast  消息
+## Message  消息
 <ClientOnly>
-  <simple-toast/>
+  <simple-message/>
 <font size=5>Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
