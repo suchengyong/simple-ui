@@ -1,6 +1,6 @@
 {
   "name": "suchengyong-simple-ui",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "private": false,
   "main": "dist/simple.umd.min.js",
   "description": "an UI framework based on Vue.js",
