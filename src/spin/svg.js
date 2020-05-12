@@ -1,3 +1,4 @@
+/* eslint-disable */
 (function(window) {
     var svgSprite = `<svg>
     <symbol id="icon-loading" viewBox="0 0 1024 1024">

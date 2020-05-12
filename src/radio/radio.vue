@@ -7,7 +7,7 @@
 import Option from './option.vue'
 export default {
   name: 's-radio',
-  components: { 's-option':Option },
+  components: { 's-option': Option },
   props: {
     options: { type: Array, required: true },
     vertical: { type: Boolean, default: false },

@@ -6,13 +6,14 @@
     </span>
 </template>
 <script>
-    import './svg'
-    export default {
-        name: 'span-icon',
-        props: { 
-            name: { type: String }
-        }
+/* eslint-disable */
+import './svg'
+export default {
+    name: 'span-icon',
+    props: { 
+        name: { type: String }
     }
+}
 </script>
 <style scoped lang="scss">
     .spin-icon-wrapper {
