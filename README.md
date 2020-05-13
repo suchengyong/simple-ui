@@ -1,4 +1,5 @@
 # simple-ui
+一个基于vue2.0的极简风格的vue UI组件库
 
 [官方文档](https://simple-ui.netlify.app)   
 
