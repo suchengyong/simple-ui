@@ -72,3 +72,23 @@ sidebarDepth: 2
 | tips-color | 加载状态的提示文字颜色 | String | -- | #36b1bf |
 | tips-size | 加载状态的提示文字大小 | String | -- | 14px |
 </ClientOnly>
+
+## Count 数字加载
+<ClientOnly>
+  <simple-count/>
+
+<font size=5> Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| startVal | 开始值	|	Number |	0 |
+| endVal	| 结束值	| Number |	2020 |
+| duration | 持续时间（毫秒）|	Number|	3000|
+| autoplay	| 自动播放时	| Boolean	| true|
+| decimals	| 要显示的小数位数 |	Number |	-- | 0 |
+| decimal	| 分割小数	| String	| --| -- |
+| separator	| 分隔符 | String | --| -- |
+| prefix |	前缀	| String | --| -- |
+| suffix	| 后缀	| String | --| -- |
+| useEasing	| 是否使用缓动动画	| Boolean	| -- | true|
+| easingFn	| 缓动动画	| Function|--| --|
+</ClientOnly>

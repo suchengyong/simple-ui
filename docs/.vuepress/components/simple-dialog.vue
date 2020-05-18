@@ -1,6 +1,6 @@
 <template>
    <div >
-    <p>用于提供水平和垂直方向展开收起动画功能的小组件。</p>
+    <p>用于移动端弹空组件</p>
     <h3>基础用法</h3>
     <simple-card>
       <div><s-button type="primary" @click="startSpread">Dialog弹空</s-button></div>
