@@ -44,3 +44,18 @@ sidebarDepth: 2
 | placement| 出现位置 | string | 消息提示文本| top|
 | trigger| 触发方式| string | click, hover| click|
 </ClientOnly>
+
+## Dialog 模态框
+<ClientOnly>
+<simple-dialog/>
+<font size=5>Attributes</font>
+| 参数| 说明 | 类型 | 可选值 | 默认值 |
+| :------ | ------ | ------ | ------ | ------ |
+| title| 模态框标题 | string | - | - |
+| text| 模态框内容 | string | - | - |
+| showCancelBtn	| 取消按钮是否显示 | boolean | - | false |
+| confirmText	| 确认按钮文字 | string | - | 确认 |
+| confirm | 确认按钮事件 | - | - | - |
+| cancel | 取消按钮事件 | - | - | - |
+
+</ClientOnly>
