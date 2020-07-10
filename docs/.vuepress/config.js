@@ -10,37 +10,29 @@ module.exports = {
       logo:'/logo.png',
       nav: [
         { text: '首页', link: '/' },
+        { text: 'pc端组件', link: '/pc/' },
+        { text: '移动端组件', link: '/mobile/' },
         { text: 'Github', link: 'https://github.com/suchengyong/simple-ui/' },
       ],
+      sidebarDepth: 2,  
       smoothScroll: true,
-      sidebar: [
-          {
-              title: '指南',
-              collapsable: true,
-              children: [
-                'views/guide/install.md',
-                'views/guide/get-started.md'
-              ]
-            },
-            {
-              title: '设计',
-              collapsable: true,
-              children: [
-                'views/design/color/',
-              ]
-            },
-            {
-              title: '组件',
-              collapsable: true,
-              children: [
-                'views/components/basic/',
-                'views/components/form/',
-                'views/components/navigation/',
-                'views/components/notice/',
-                'views/components/other/'
-              ]
-            },
-      ]
+      collapsable:false,
+      sidebar: {
+          '/pc/':[
+            '',
+            ['components/basic/','基础组件'],
+            ['components/form/','表单组件'],
+            ['components/navigation/','导航组件'],
+            ['components/notice/','消息组件'],
+            ['components/other/','其他组件']
+          ],
+          '/mobile/':[
+            '',
+            ['components/basic/','基础组件'],
+            ['components/form/','表单组件'],
+            ['components/feedback/','反馈组件']
+          ]
+      }
     },
     scss:{ //配置 scss 根目录
       includePaths: [path.join(__dirname, '../../style')]

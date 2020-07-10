@@ -92,3 +92,28 @@ sidebarDepth: 2
 | useEasing	| 是否使用缓动动画	| Boolean	| -- | true|
 | easingFn	| 缓动动画	| Function|--| --|
 </ClientOnly>
+
+## imageCrop 图片裁剪
+<ClientOnly>
+  <simple-imageCrop/>
+
+<font size=5> Attributes</font>
+| 属性名|	作用|	类型|	必填|	默认值|
+| ------ | ---- | ----- | ---- | ---- |
+|isModal|	是否为弹窗模式|	Boolean	|否	|true|
+|showChooseBtn|	是否显示选择图片按钮 |	Boolean	 |否 |	true |
+|lockScroll	|是否在Dialog出现时将body滚动锁定 |	Boolean |	否 |	true |
+|label|	默认打开裁剪工具按钮的显示文字 |	String |	否 |	选择图片 |
+|boxWidth|	裁剪工具宽度 |	Number |	否 |	800 |
+|boxHeight|	裁剪工具高度 |	Number |否 |	400 |
+|cutWidth|	默认裁剪宽度 |	Number |	否 |	200 |
+|cutHeight|	默认裁剪高度 |	Number |	否 |	200 |
+|tool|	是否显示工具栏 |	Boolean	 |否 |	true |
+|sizeChange	|是否能够调整裁剪框大小 |	Boolean |	否 |	true |
+|moveAble|	能否调整裁剪区域位置 |	Boolean	 |否 |	true |
+|crossOrigin|	是否设置跨域，需要服务器做相应更改 |	Boolean |	否 |	false |
+|crossOriginHeader|	设置跨域信息crossOrigin为true时才生效 |	String |	否 |	'' |
+|rate|	图片比例 |	String(例: "4:3") |	否 |- |
+|cutDown|	完成截图后要执行的方法	 | Function |	是 |	- |
+|error|	错误回调 |	Function |	否 |	- |
+</ClientOnly>

@@ -1,6 +1,6 @@
 ---
 title: 'Navigation 导航'
-sidebarDepth: 4
+sidebarDepth: 2
 ---
 
 ## Tabs 标签面板

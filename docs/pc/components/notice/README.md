@@ -28,15 +28,12 @@ sidebarDepth: 2
 | content| 模态框内容 | string /html片段(需要设置enableContentHtml是true)| - | - |
 | enableContentHtml	| 允许插入html作为内容 | boolean | - | false |
 | btnConfig| 自定义关闭按钮文案和回调，有效的key包括不同类型按钮文案和按钮点击回调，如下'confrimCallback', 'cancelCallback', 'cancelModalCallback', 'confirmText', 'cancelText')} |object | - | - |
-
-
 </ClientOnly>
 
 
 ## Popover 弹出框
 <ClientOnly>
   <simple-popover/>
-
 <font size=5>Attributes</font>
 | 参数| 说明 | 类型 | 可选值 | 默认值 |
 | :------ | ------ | ------ | ------ | ------ |
@@ -57,5 +54,4 @@ sidebarDepth: 2
 | confirmText	| 确认按钮文字 | string | - | 确认 |
 | confirm | 确认按钮事件 | - | - | - |
 | cancel | 取消按钮事件 | - | - | - |
-
 </ClientOnly>

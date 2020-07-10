@@ -5,14 +5,7 @@
 </template>
 <script>
 export default {
-  name: 's-button-group',
-  mounted () {
-    for (let node of this.$el.children) {
-      if (node.nodeName.toLowerCase() !== 'button') {
-        console.warm('使用不规范，请参考官方文档')
-      }
-    }
-  }
+  name: 's-button-group'
 }
 </script>
 <style lang="scss" scoped>

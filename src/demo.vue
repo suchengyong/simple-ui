@@ -1,6 +1,7 @@
 <template>
   <div style="margin:60px">
-   <s-count :startVal='startVal' :endVal='endVal' :duration='3000'></s-count>
+   <s-actionsheet  :_visible="visible" @close="closeActionSheet" _cancelTxt="取消"  :_menuItems="menuItems" ></s-actionsheet>
+   <div @click="open">动作组件</div>
   </div>
 </template>
 <script>
@@ -8,17 +9,23 @@
 export default {
   data () {
     return {
-      startVal: 0,
-      endVal: 2020
+      visible:false,
+      menuItems:[
+        {name:'语文'},{name:'数学'}
+      ]
     }
   },
   computed: {
   },
   mounted () {
-    
   },
   methods: {
-   
+    open(){
+      this.visible = true;
+    },
+    closeActionSheet(){
+       this.visible = false;
+    }
   }
 }
 </script>

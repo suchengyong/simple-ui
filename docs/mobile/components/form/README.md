@@ -1,6 +1,6 @@
 ---
 title: 'Form 表单'
-sidebarDepth: 7
+sidebarDepth: 2
 ---
 ## Input 输入框
 <ClientOnly>
