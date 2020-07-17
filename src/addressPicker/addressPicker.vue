@@ -4,39 +4,17 @@
       <div class="panel slide-up" @click.stop>
         <div class="picker-title">选择居住城市</div>
         <ul class="header">
-          <li
-            v-for="(item, index) in result"
-            :key="index"
-            class="header-item"
-            @click="handleClick(item, index)"
-          >
-            <div class="menu" :class="{ active: currentActiveIndex === index }">
-              {{ item.name }}
-            </div>
+          <li v-for="(item, index) in result" :key="index" class="header-item" @click="handleClick(item, index)">
+            <div class="menu" :class="{ active: currentActiveIndex === index }">{{ item.name }}</div>
           </li>
-          <li
-            v-show="result.length < 3"
-            @click="handleClick({})"
-            class="header-item"
-          >
-            <div
-              class="menu"
-              :class="{ active: currentActiveIndex === undefined }"
-            >
-              请选择
-            </div>
+          <li v-show="result.length < 3" @click="handleClick({})" class="header-item">
+            <div class="menu" :class="{ active: currentActiveIndex === undefined }">请选择</div>
           </li>
         </ul>
         <div class="content">
           <vue-scroll :ops="ops" ref="vs">
             <ul class="list">
-              <li
-                class="list-item"
-                v-for="(item, index) in list"
-                :id="'li' + index"
-                :key="item._id"
-                @click="handlePick(item)"
-              >
+              <li class="list-item" v-for="(item, index) in list" :id="'li' + index" :key="item._id" @click="handlePick(item)">
                 <span>{{ item.name }}</span>
                 <img :src="yesUrl" class="icon" v-if="activeCurrent(item)" />
                 <img :src="yesUrl" class="icon" v-if="currentActiveIndex==2&&indexIcon == index" />
@@ -58,7 +36,9 @@ const sorter = (a, b) => a.code - b.code;
 const provinces = district.filter(area => area.level === 0).sort(sorter);
 const cities = district.filter(area => area.level === 1).sort(sorter);
 const areas = district.filter(area => area.level === 2).sort(sorter);
-
+import Vue from 'vue'
+import vuescroll from 'vuescroll'
+Vue.use(vuescroll)
 export default {
   name: "s-addressPicker",
   props: ["show", "address"],

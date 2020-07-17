@@ -1,17 +1,27 @@
-    
 <template>
-  <div class="wrap" v-if="showWrap" :class="showContent ?'fadein':'fadeout'">{{text}}</div>
+  <div v-if="showWrap" class="toast_page">
+    <div class="wrap"  :class="showContent ?'fadein':'fadeout'">{{text}}</div>
+  </div>
 </template>
-
 <style scoped>
+  .toast_page{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.01);
+    z-index:9999;
+  }
+
   .wrap{
     position: fixed;
     left: 50%;
     top:50%;
     background: rgba(0,0,0,.75);
-    padding: 1rem 1.3rem;
-    font-size:1rem;
-    border-radius: 2rem;
+    padding: 10px 20px;
+    font-size:16px;
+    border-radius: 20px;
     transform: translate(-50%,-50%);
     color:#fff;
     text-align:center;

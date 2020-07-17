@@ -1,31 +1,16 @@
 /* eslint-disable */
-import myLoading from './loading.vue';
+import Vue from 'vue';
+import Loading from './loading.js';
 
-function showLoading(Vue,options) {
-    const Loading = Vue.extend(myLoading);
-    const Profile = new Loading({
-        el: document.createElement('div')
-    });
-        
-    document.body.appendChild(Profile.$el);
-        
-    if(options){
-        if(options.icon)
-            Profile.icon = options.icon;
-        if(options.progressColor)
-            Profile.progressColor = options.progressColor;
-    }
-    let myLoadingMethod = {
-        open(text) {
-            Profile.show = true;
-        if(text)
-            Profile.text = text;
-        },
-        hide() {
-            Profile.show = false;
-        }
-    };
-    return myLoadingMethod
+const install = function(Vue) {
+  Vue.prototype.$loading = Loading;
 }
 
-export default showLoading
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+export default {
+  version: '1.0.0',
+  install
+}

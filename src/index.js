@@ -22,8 +22,6 @@ import {default as Row} from './layout/row'
 import {default as Modal} from './notice/modal'
 import {default as Popover} from './notice/popover'
 import {default as Message} from './notice/message'
-import {default as ToastPlugin} from './plugins/modal'
-import {default as ModalPlugin} from './plugins/message'
 import {default as SlideItem} from './slide/slide-item'
 import {default as Slide} from './slide/slide'
 import {default as Steps} from './step/steps'
@@ -44,7 +42,6 @@ import {default as MenuItem} from './menu/menu-item'
 import {default as SubMenu} from './menu/sub-menu'
 import {default as Pager} from './pager/pager'
 import {default as Spin} from './spin/spin'
-import {default as Dialog} from './dialog/dialog'
 import {default as CountTo} from './countTo/countTo'
 import {default as ImageCrop} from './imageCrop/imageCrop'
 import {default as Pop} from './pop/index.vue'
@@ -55,10 +52,12 @@ import {default as AddressPicker} from './addressPicker/index';
 import {default as AutoScroll} from './autoScroll/index';
 
 //全局服务
-import ShowToast from './toast/index'
-import ShowLoading from './loading/index'
-import ModalDialog from './dialog/index'
-
+import ShowToast from './toast/toast'
+import ShowLoading from './loading/loading'
+import ModalDialog from './modalDialog/dialog'
+import ModalPlugin from './plugins/modal'
+import MessagePlugin from './plugins/message'
+import ShowDialog from './dialog/dialog'
 
 const components = [
     Button,
@@ -119,12 +118,11 @@ const install = function(Vue,option) {
     });
     // 注册服务
     Vue.prototype.$toast = ShowToast;
-    let loading = ShowLoading(Vue,option);
-    Vue.prototype.$loading = loading;
-    Vue.prototype.$dialog = Dialog;
-    Vue.prototype.$modalDialog = ModalDialog;
-    Vue.prototype.$ToastPlugin = ToastPlugin;
-    Vue.prototype.$ModalPlugin = ModalPlugin;
+    Vue.prototype.$loading = ShowLoading;
+    Vue.prototype.$dialog = ModalDialog;
+    Vue.prototype.$showDialog = ShowDialog;
+    Vue.prototype.$message = MessagePlugin;
+    Vue.prototype.$modalPlugin = ModalPlugin;
 }
 
 if (typeof window !== 'undefined' && window.Vue) {

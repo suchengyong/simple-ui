@@ -8,16 +8,7 @@
         </div>
         <div class="picker-panel">
             <template v-for="(item, index) of _listData" >
-                <picker-slot 
-                    :_curr-color="_currColor"
-                    :ref="`picer-slot-${(index)}`" 
-                    :_default-value="chooseValueData[index]" 
-                    :_is-update="isUpdate" 
-                    :_list-data="item" 
-                    @chooseItem="chooseItem" 
-                    :key="index" 
-                    :key-index="index"
-                ></picker-slot>
+                <picker-slot :_curr-color="_currColor" :ref="`picer-slot-${(index)}`" :_default-value="chooseValueData[index]" :_is-update="isUpdate" :_list-data="item" @chooseItem="chooseItem" :key="index" :key-index="index"></picker-slot>
             </template>
         </div>
     </div>
@@ -26,6 +17,7 @@
 <script>
 /* eslint-disable */
 import pickerSlot from "./pickerSlot.vue";
+import actionsheet from '../../actionsheet/src/main'
 export default {
     name:'s-picker',
     props: {
@@ -67,6 +59,7 @@ export default {
         },
     },
     components: {
+        's-actionsheet':actionsheet,
        [pickerSlot.name]: pickerSlot,
     },
     data() {

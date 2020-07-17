@@ -1,13 +1,16 @@
 /* eslint-disable */
 import Vue from 'vue';
-import Dialog from './index.vue';
+import Dialog from './dialog.js';
 
-let DialogConstructor = Vue.extend(Dialog);
-let instance;
-instance = new DialogConstructor({
-    el: document.createElement('div')
-});
-let $body = document.body;
-$body.appendChild(instance.$el);
+const install = function(Vue) {
+  Vue.prototype.$dialog = Dialog;
+}
 
-export default instance;
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+export default {
+  version: '1.0.0',
+  install
+}

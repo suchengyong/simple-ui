@@ -1,7 +1,7 @@
 <template>
   <div style="margin:60px">
-   <s-actionsheet  :_visible="visible" @close="closeActionSheet" _cancelTxt="取消"  :_menuItems="menuItems" ></s-actionsheet>
-   <div @click="open">动作组件</div>
+    <s-addressPicker v-model="location" :show.sync="showPicker"></s-addressPicker>
+   <s-button type='primary' @click="open">按钮</s-button>
   </div>
 </template>
 <script>
@@ -9,23 +9,19 @@
 export default {
   data () {
     return {
-      visible:false,
-      menuItems:[
-        {name:'语文'},{name:'数学'}
-      ]
+      showPicker:false,
+      location:'',
     }
   },
-  computed: {
-  },
-  mounted () {
-  },
+   watch:{
+      location(newVal,oldVal){
+          console.log(newVal)
+      }
+    },  
   methods: {
     open(){
-      this.visible = true;
+      this.showPicker = true;
     },
-    closeActionSheet(){
-       this.visible = false;
-    }
   }
 }
 </script>

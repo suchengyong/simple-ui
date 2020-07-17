@@ -19,8 +19,12 @@
 <script type="text/babel">
 /* eslint-disable */
   import {cityData} from '../data/citydata'
+  import Picker from '../../picker/src/main'
   export default {
       name:'s-address',
+      components: {
+        's-picker':Picker
+      },
       props: {
           _visible: {
               type: Boolean,

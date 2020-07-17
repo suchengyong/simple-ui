@@ -1,24 +1,16 @@
 /* eslint-disable */
-import vue from 'vue'
-import toastComponent from './Toast.vue'
+import Vue from 'vue';
+import Toast from './toast.js';
 
-const ToastConstructor = vue.extend(toastComponent)
-
-function showToast(text, duration = 3000) {
-  const toastDom = new ToastConstructor({
-    el: document.createElement('div'),
-    data() {
-      return {
-        text:text,
-        showWrap:true,
-        showContent:true
-      }
-    }
-  })
-
-  document.body.appendChild(toastDom.$el)
-  setTimeout(() => {toastDom.showContent = false} ,duration - 250)
-  setTimeout(() => {toastDom.showWrap = false} ,duration)
+const install = function(Vue) {
+  Vue.prototype.$toast = Toast;
 }
 
-export default showToast
+if (typeof window !== 'undefined' && window.Vue) {
+  install(window.Vue);
+}
+
+export default {
+  version: '1.0.0',
+  install
+}
